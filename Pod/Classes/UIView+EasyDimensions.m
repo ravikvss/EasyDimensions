@@ -73,4 +73,13 @@
   return self.frame.size.height;
 }
 
+-(void)setViewForTesting
+{
+  self.backgroundColor = [[UIColor purpleColor] colorWithAlphaComponent:0.4];
+}
+
+-(void)logFrameWithArgument:(NSString*)argument
+{
+  NSLog(@"%@ %@", NSStringFromCGRect(self.frame), argument);
+}
 @end

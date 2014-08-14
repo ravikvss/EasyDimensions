@@ -23,6 +23,8 @@
 -(CGFloat)y__;
 -(CGFloat)width__;
 -(CGFloat)height__;
+-(CGFloat)endingPositionX;
+-(CGFloat)endingPositionY;
 
 -(void)setViewForTesting;
 -(void)logFrameWithArgument:(NSString*)argument;

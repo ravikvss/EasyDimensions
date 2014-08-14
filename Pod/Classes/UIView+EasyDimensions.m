@@ -78,6 +78,16 @@
   self.backgroundColor = [[UIColor purpleColor] colorWithAlphaComponent:0.4];
 }
 
+-(CGFloat)endingPositionX
+{
+  return (self.frame.origin.x + self.frame.size.width);
+}
+
+-(CGFloat)endingPositionY
+{
+  return (self.frame.origin.y + self.frame.size.height);
+}
+
 -(void)logFrameWithArgument:(NSString*)argument
 {
   NSLog(@"%@ %@", NSStringFromCGRect(self.frame), argument);

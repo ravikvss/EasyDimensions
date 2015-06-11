@@ -28,4 +28,8 @@
 
 -(void)setViewForTesting;
 -(void)logFrameWithArgument:(NSString*)argument;
+
+-(void)spaceOut;
+-(void)spaceIn;
+
 @end

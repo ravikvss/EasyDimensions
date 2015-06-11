@@ -92,4 +92,21 @@
 {
   NSLog(@"%@ %@", NSStringFromCGRect(self.frame), argument);
 }
+
+-(void)spaceOut
+{
+  CALayer *layer = self.layer;
+  layer.zPosition = -4000;
+  CGFloat scale = 0.9;
+  layer.transform = CATransform3DMakeScale(scale, scale, scale);
+}
+
+-(void)spaceIn
+{
+  CALayer *layer = self.layer;
+  layer.zPosition = 0;
+  CGFloat scale = 1;
+  layer.transform = CATransform3DMakeScale(scale, scale, scale);
+}
+
 @end

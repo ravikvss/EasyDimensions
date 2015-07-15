@@ -32,4 +32,6 @@
 -(void)spaceOut;
 -(void)spaceIn;
 
+- (void)circleize;
+
 @end

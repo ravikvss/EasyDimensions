@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "EasyDimensions"
-  s.version          = "0.1.0"
+  s.version          = "0.2"
   s.summary          = "Simple category on UIView that makes it easy to get and set the frame properties"
   s.description      = <<-DESC
                        An optional longer description of EasyDimensions

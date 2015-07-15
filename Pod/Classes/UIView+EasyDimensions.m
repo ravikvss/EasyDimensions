@@ -6,6 +6,7 @@
 //
 
 #import "UIView+EasyDimensions.h"
+#import <QuartzCore/QuartzCore.h>
 
 @implementation UIView (EasyDimensions)
 -(void)setFrameWithNewX:(CGFloat)newX
@@ -107,6 +108,12 @@
   layer.zPosition = 0;
   CGFloat scale = 1;
   layer.transform = CATransform3DMakeScale(scale, scale, scale);
+}
+
+-(void)circleize
+{
+  if (self.width__==self.height__)
+    self.layer.cornerRadius = self.width__/2.0;
 }
 
 @end

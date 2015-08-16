@@ -1,12 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = "EasyDimensions"
   s.version          = "0.2"
-  s.summary          = "Simple category on UIView that makes it easy to get and set the frame properties"
+  s.summary          = "Category on UIView to easily set and get frames"
   s.description      = <<-DESC
-                       An optional longer description of EasyDimensions
+                       A category on UIView that makes it easy to get and set the frame properties. Also available is a developing list of other boilerplate UIView methods.
 
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       * Set and get frames
+                       * Easily access properties of the frame of the view
+                       * Perform simple UIView animation tasks
                        DESC
   s.homepage         = "https://github.com/ravikvss/EasyDimensions"
   s.license          = 'MIT'
@@ -18,7 +19,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes'
-  s.resources = 'Pod/Assets/*.png'
+  s.resources    = nil
 
-  s.frameworks = 'UIKit'
+  s.frameworks   = 'UIKit'
 end
